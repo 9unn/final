@@ -9,7 +9,7 @@ body{
 .navbar{
     display: flex;
     align-items: center;
-    top: 10px;
+    /* top: 10px; */
 }
 nav{
     flex: 1;
@@ -18,14 +18,15 @@ nav{
 nav ul{
     display: inline-block;
     list-style-type: none;
-    margin-bottom: 70px;
+    
 }
 nav ul li{
     display: inline-block;
     margin-right: 25px;
-}
-li .bar{
-    bottom: 50px;
+    position: relative;
+    padding: -50px 0;
+    z-index: 1;
+    transform: translate(0%,-50%);
 }
 
 /* color for menu bar */
@@ -35,7 +36,9 @@ a{
 }
 .cart-img{
     cursor: pointer;
+    margin-right: 10px;
 }
+
 .container{
     max-width: 1300px;
     margin: auto;
@@ -86,7 +89,7 @@ a{
     padding: 20px;
 }
 .header row{
-    margin-top: 70px;
+    margin-top: 50px;
     padding: 5px;
 }
 .categories{
@@ -395,20 +398,25 @@ input:focus{
     max-width: 100%;
 } 
 .small-img{
-    margin-right: -200px;
-    transform: translate(0 0); 
+    max-width: 50%;
+    margin-right: 50px;
+    transform: translate(-50%,-50%); 
+    z-index: 1;
+    margin-top: 25%;
+    position: relative;
+    
     
 }
 .single-product .col-2-top{
     width: 25%;
-    margin: 30px;
+    margin: 10px;
     height: 85%;
     color: rgb(9, 78, 43);
     text-align: left;
     position: absolute;
-    top: 100%;
+    top: 80%;
     left: 65%;
-    transform: translate(-50%, -50%); 
+    transform: translate(-35%, -35%); 
     z-index: 1;
 }
 .size{
@@ -427,13 +435,13 @@ input:focus{
 .size .option-list{
     position: relative;
     padding: 20px;
-    margin-top: 2px;
-    background:#a23333 ;
+    margin-top: 5px;
+    background:#ffd7d7 ;
     border: 1px solid pink;
     display: none;
 }
 .size .click .option-list{
-    display: block;
+    display: inline-flexbox;
 }
 .option-list .option{
     display: table;
@@ -456,7 +464,7 @@ input:focus{
     margin-top: 10px;
 }
 /* --------cart------ */
-.add-cart {
+.add-cart{
     margin-top: 80px;
 }
 .cart{

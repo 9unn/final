@@ -7,12 +7,12 @@
         <title> PHEFLUFFY Official</title>
         <link rel="stylesheet" href="{% static 'css/style.css'%}">
         <link rel="stylesheet" href="{% static 'images/MagicEraser_5660418_164818.PNG'%}">
-        <link rel="stylesheet" href="{% static 'images/menu_FILL0_wght400_GRAD0_opsz48.png'%}">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
         
         
     </head>
@@ -32,14 +32,12 @@
                             <li><a href="{% url 'myapp:products'%}">Products</a></li>
                             <li><a href="{% url 'myapp:about'%}">About</a></li>
                             <li><a href="{% url 'myapp:account'%}">Account</a></li>
-                            <li><a href="{% url 'myapp:logout'%}">Log Out</a></li>
                         </ul>
                     </nav>
                     <a href="{% url 'myapp:cart'%}">
                     <img src="https://cdn-icons-png.flaticon.com/512/1413/1413908.png" width="30px" height="30px" class="cart-img"></a>
-                    <img src="{% static 'images/menu_FILL0_wght400_GRAD0_opsz48.png' %}" class="menu-icon" onclick="menutoggle()">
+                    <img src="{% static 'images/menu_FILL0_wght400_GRAD0_opsz40.png' %}" class="menu-icon" onclick="menutoggle()">
                 </div>
-                
                 <div class="row">
                     <div class="col-2">
                         <h1>Let's go baby</h1>
@@ -71,8 +69,9 @@
              <div class="small-container">
                 <h2 class="title">Best Seller</h2>
                 <div class="row">
+                    
                     <div class="col-4">
-                        <img src="https://d.line-scdn.net/obs/r/ect/ect/image_165577979268402309819cc5425t0fed58c0">
+                        <a href=""><img src="https://d.line-scdn.net/obs/r/ect/ect/image_165577979268402309819cc5425t0fed58c0"></a>
                         <h4>Cozy pants (Black)</h4>
                         <p>320 ฿</p>
                     </div>
@@ -92,6 +91,7 @@
                         <p>300 ฿</p>
                     </div>
                 </div>
+
                 <h2 class="title">New Arrivals</h2>
                 <div class="row">
                     <div class="col-4">
